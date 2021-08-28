@@ -6,6 +6,12 @@
   --colors-body: #a4133c;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -171,4 +177,63 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+
+.button {
+  padding: 10px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: whitesmoke;
+}
+
+.button--primary:hover {
+  background-color: #f8972f;
+}
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: whitesmoke;
+}
+
+.button--secondary:hover {
+  background-color: #fccb68;
+}
+
+.button--accent {
+  background-color: var(--color-acent);
+  color: whitesmoke;
+}
+
+.button--accent:hover {
+  background-color: #1f4b63;
+}
+
+.button--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.button--outline {
+  background-color: white;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
