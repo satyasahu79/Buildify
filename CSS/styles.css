@@ -333,11 +333,17 @@ a {
 }
 
 .card--secondary .badge--secondary {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.card--primary .badge--primary {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /* Plans */
 
+.plan {
+  transition: transform 0.3s ease-out;
+}
 .plan__name {
   color: #f3f3f3;
   margin: 0;
@@ -369,13 +375,21 @@ a {
   position: relative;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header::before {
   content: url(/icons/popular.svg);
   width: 40px;
   display: inline-block;
   position: absolute;
-  top: -6px;
+  top: -6.5px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 1024px) {
@@ -467,6 +481,11 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr; /* can also write it as "repeat(2,1fr)" */
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr; /* can also write it as "repeat(2,1fr)" */
   }
 }
 
@@ -721,4 +740,15 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Section */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 400px;
+  margin: 0 auto;
 }
