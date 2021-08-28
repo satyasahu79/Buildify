@@ -169,6 +169,10 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon-small {
+  height: 30px;
+  width: 30px;
+}
 
 .icon--primary {
   fill: var(--color-primary);
@@ -182,6 +186,10 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background-color: var(--color-acent);
 }
 
 /* Buttons */
@@ -405,7 +413,7 @@ a {
   font-style: normal;
   font-size: 2rem;
   position: relative;
-  bottom: 8px;
+  bottom: 11px;
 }
 
 .quote__author {
@@ -443,3 +451,34 @@ a {
     grid-template-columns: 1fr 1fr; /* can also write it as "repeat(2,1fr)" */
   }
 }
+
+/* Testimonial */
+
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 32px;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+}
+
+/* Callout */
