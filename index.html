@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buildify</title>
+    <meta name="description" content="Deploy your websites in lessthan 60 seconds.">
+    <meta property="og:title" content="Buildify">
+    <meta property="og:description" content="Buildify....">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="buldify">
+
+    
+    <title>Buildify - Build go online for just $9</title>
+
     <link rel="stylesheet" href="/CSS/styles.css" />
     <link rel="stylesheet" href="/CSS/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -40,14 +49,19 @@
 
     <section class="block block--dark block--skewed--left hero">
       <div class="container grid grid--1x2">
-        <header class="hero__content block__header">
+        <header data-aos="zoom-in-right" class="hero__content block__header">
           <h1 class="block__heading">Cloud Hosting for Pros.</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
-          <a href="" class="button button--accent">Get Started</a>
+          <a href="#" class="button button--accent">Get Started</a>
         </header>
-        <img class="hero__image" src="/Images/banner.webp" alt="" />
+        <img
+          data-aos="fade-up-left"
+          class="hero__image"
+          src="/Images/banner.webp"
+          alt=""
+        />
       </div>
     </section>
 
@@ -64,34 +78,36 @@
           error.
         </p>
       </header>
-      <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here..."
-        />
-        <button class="button button--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="sprite.svg#search"></use>
-          </svg>
-          Search
-        </button>
-      </div>
-      <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com $9</span></li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.io $12</li>
-      </ul>
+      <div data-aos="zoom-in-up">
+        <div  class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter domain name here..."
+          />
+          <button class="button button--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="sprite.svg#search"></use>
+            </svg>
+            Search
+          </button>
+        </div>
+        <ul class="list block-domain__prices">
+          <li><span class="badge badge--secondary">.com $9</span></li>
+          <li>.sg $10</li>
+          <li>.space $11</li>
+          <li>.info $14</li>
+          <li>.net $10</li>
+          <li>.io $12</li>
+        </ul>
+      </div data-aos="zoom-in-up">
     </section>
 
     <!-- Domains Section Ends -->
 
     <!-- Plans Section -->
 
-    <section class="block container block-plans">
+    <section data-aos="zoom-in-down" class="block container block-plans">
       <div class="grid grid--1x3">
         <div>
           <div class="plan">
@@ -183,7 +199,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div data-aos="fade-right" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="sprite.svg#easy"></use>
@@ -199,7 +215,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <img class="feature__image" src="/Images/easy.webp" alt="" />
+        <img data-aos="fade-left"  class="feature__image" src="/Images/easy.webp" alt="" />
       </article>
 
       <article class="grid grid--1x2 feature">
@@ -271,9 +287,10 @@
       <header class="block__header">
         <h2 class="block__heading">User-friendly Control Panel</h2>
       </header>
+
       <div class="container grid grid--1x2">
-        <img class="block-showcase__image" src="/Images/ipad.webp" alt="" />
-        <div class="media block-showcase">
+        <img data-aos="fade-right" class="block-showcase__image" src="/Images/ipad.webp" alt="" />
+        <div data-aos="fade-up"class="media block-showcase">
           <div class="media__image">
             <svg class="icon icon--primary">
               <use xlink:href="sprite.svg#easy"></use>
@@ -311,7 +328,7 @@
 
     <!-- Testimonials Section -->
 
-    <section class="block">
+    <section data-aos="zoom-in"class="block">
       <header class="block__header container">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -365,7 +382,7 @@
 
     <!-- Callout Section -->
 
-    <div class="callout callout--primary container">
+    <div data-aos="zoom-in" class="callout callout--primary container">
       <div class="grid grid--1x2">
         <div class="callout__content">
           <h2 class="callout__heading">Ready to get started.</h2>
@@ -477,6 +494,9 @@
     <!-- Footer Section Ends-->
 
     <script src="/js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
